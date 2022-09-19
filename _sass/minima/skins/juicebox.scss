@@ -12,22 +12,23 @@
 @import"https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap";
 
 
-$jb-base03:   #002b36;  // 15 -12 -12
-$jb-base02:   #073642;  // 20 -12 -12
-$jb-base01:   #586e75;  // 45 -07 -07
-$jb-base00:   #657b83;  // 50 -07 -07
-$jb-base0:    #839496;  // 60 -06 -03
-$jb-base1:    #93a1a1;  // 65 -05 -02
-$jb-base2:    #eee8d5;  // 92 -00  10
-$jb-base3:    #fdf6e3;  // 97  00  10
-$jb-yellow:   #b58900;  // 60  10  65
-$jb-orange:   #cb4b16;  // 50  50  55
-$jb-red:      #dc322f;  // 50  65  45
-$jb-magenta:  #d33682;  // 50  65 -05
-$jb-violet:   #6c71c4;  // 50  15 -45
-$jb-blue:     #268bd2;  // 55 -10 -45
-$jb-cyan:     #2aa198;  // 60 -35 -05
-$jb-green:    #859900;  // 60 -20  65
+$jb-base03:   #FF1FD0;
+$jb-base02:   #45F8CF;
+$jb-base01:   #ffffff;
+$jb-base00:   #657b83;
+$jb-base0:    #839496;
+$jb-base1:    #93a1a1;
+$jb-base2:    #eee8d5;
+$jb-base3:    #000000;
+
+$jb-yellow:   #b58900;
+$jb-orange:   #cb4b16;
+$jb-red:      #dc322f;
+$jb-magenta:  #d33682;
+$jb-violet:   #6c71c4;
+$jb-blue:     #268bd2;
+$jb-cyan:     #2aa198;
+$jb-green:    #859900;
 
 
 $jb-light-mix1:  mix($jb-base1, $jb-base3);

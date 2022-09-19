@@ -1,5 +1,3 @@
-# Index
-
 Hello world
 
 ```py

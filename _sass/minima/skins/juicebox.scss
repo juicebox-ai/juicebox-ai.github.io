@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+// JuiceBox skin
+// =============
+// Created by Ethan Chapman <mailto:me@ethanchap.com>
+// for JuiceBox AI <https://juicebox.ai>
+
+// disable standard minima skins
+// $jb-is-auto: false !default;
+// $jb-is-dark: false !default;
+
+@import"https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap";
+
+
+$jb-base03:   #002b36;  // 15 -12 -12
+$jb-base02:   #073642;  // 20 -12 -12
+$jb-base01:   #586e75;  // 45 -07 -07
+$jb-base00:   #657b83;  // 50 -07 -07
+$jb-base0:    #839496;  // 60 -06 -03
+$jb-base1:    #93a1a1;  // 65 -05 -02
+$jb-base2:    #eee8d5;  // 92 -00  10
+$jb-base3:    #fdf6e3;  // 97  00  10
+$jb-yellow:   #b58900;  // 60  10  65
+$jb-orange:   #cb4b16;  // 50  50  55
+$jb-red:      #dc322f;  // 50  65  45
+$jb-magenta:  #d33682;  // 50  65 -05
+$jb-violet:   #6c71c4;  // 50  15 -45
+$jb-blue:     #268bd2;  // 55 -10 -45
+$jb-cyan:     #2aa198;  // 60 -35 -05
+$jb-green:    #859900;  // 60 -20  65
+
+
+$jb-light-mix1:  mix($jb-base1, $jb-base3);
+$jb-light-mix2:  mix($jb-blue, $jb-base00);
+$jb-light-mix3:  mix($jb-base2, $jb-base3);
+$jb-dark-mix1:   mix($jb-base01, $jb-base03);
+$jb-dark-mix2:   mix($jb-blue, $jb-base0);
+$jb-dark-mix3:   mix($jb-base02, $jb-base03);
+
+$jb-mono3:    $jb-base3;
+$jb-mono2:    $jb-base2;
+$jb-mono1:    $jb-base1;
+$jb-mono00:   $jb-base00;
+$jb-mono01:   $jb-base01;
+$jb-mix1:     $jb-light-mix1;
+$jb-mix2:     $jb-light-mix2;
+$jb-mix3:     $jb-light-mix3;
+
+
+$base-font-weight: 400;
+$base-font-size: 12pt;
+$base-line-height: 100%;
+$base-font-family: "Source Sans Pro", "sans-serif";
+
+
+// Minima color variables
+// ----------------------
+$brand-color:           $jb-mono1 !default;
+$brand-color-light:     $jb-mix1 !default;
+$brand-color-dark:      $jb-mono00 !default;
+
+$site-title-color:      $jb-mono00 !default;
+
+$text-color:            $jb-mono01 !default;
+$background-color:      $jb-mono3 !default;
+$code-background-color: $jb-mono2 !default;
+
+$link-base-color:       $jb-blue !default;
+$link-visited-color:    $jb-mix2 !default;
+$link-hover-color:      $jb-mono00 !default;
+
+$border-color-01:       $brand-color-light !default;
+$border-color-02:       $jb-mono1 !default;
+$border-color-03:       $jb-mono00 !default;
+
+$table-text-color:      $jb-mono00 !default;
+$table-zebra-color:     $jb-mix3 !default;
+$table-header-bg-color: $jb-mono2 !default;
+$table-header-border:   $jb-mono1 !default;
+$table-border-color:    $jb-mono1 !default;
+
+
+// Syntax highlighting styles
+// --------------------------
+
+.highlight {
+  .c     { color: $jb-mono1; font-style: italic } // Comment
+  .err   { color: $jb-red } // Error
+  .k     { color: $jb-mono01; font-weight: bold } // Keyword
+  .o     { color: $jb-mono01; font-weight: bold } // Operator
+  .cm    { color: $jb-mono1; font-style: italic } // Comment.Multiline
+  .cp    { color: $jb-mono1; font-weight: bold } // Comment.Preproc
+  .c1    { color: $jb-mono1; font-style: italic } // Comment.Single
+  .cs    { color: $jb-mono1; font-weight: bold; font-style: italic } // Comment.Special
+  .gd    { color: $jb-red } // Generic.Deleted
+  .gd .x { color: $jb-red } // Generic.Deleted.Specific
+  .ge    { color: $jb-mono00; font-style: italic } // Generic.Emph
+  .gr    { color: $jb-red } // Generic.Error
+  .gh    { color: $jb-mono1 } // Generic.Heading
+  .gi    { color: $jb-green } // Generic.Inserted
+  .gi .x { color: $jb-green } // Generic.Inserted.Specific
+  .go    { color: $jb-mono00 } // Generic.Output
+  .gp    { color: $jb-mono00 } // Generic.Prompt
+  .gs    { color: $jb-mono01; font-weight: bold } // Generic.Strong
+  .gu    { color: $jb-mono1 } // Generic.Subheading
+  .gt    { color: $jb-red } // Generic.Traceback
+  .kc    { color: $jb-mono01; font-weight: bold } // Keyword.Constant
+  .kd    { color: $jb-mono01; font-weight: bold } // Keyword.Declaration
+  .kp    { color: $jb-mono01; font-weight: bold } // Keyword.Pseudo
+  .kr    { color: $jb-mono01; font-weight: bold } // Keyword.Reserved
+  .kt    { color: $jb-violet; font-weight: bold } // Keyword.Type
+  .m     { color: $jb-cyan } // Literal.Number
+  .s     { color: $jb-magenta } // Literal.String
+  .na    { color: $jb-cyan } // Name.Attribute
+  .nb    { color: $jb-blue } // Name.Builtin
+  .nc    { color: $jb-violet; font-weight: bold } // Name.Class
+  .no    { color: $jb-cyan } // Name.Constant
+  .ni    { color: $jb-violet } // Name.Entity
+  .ne    { color: $jb-violet; font-weight: bold } // Name.Exception
+  .nf    { color: $jb-blue; font-weight: bold } // Name.Function
+  .nn    { color: $jb-mono00 } // Name.Namespace
+  .nt    { color: $jb-blue } // Name.Tag
+  .nv    { color: $jb-cyan } // Name.Variable
+  .ow    { color: $jb-mono01; font-weight: bold } // Operator.Word
+  .w     { color: $jb-mono1 } // Text.Whitespace
+  .mf    { color: $jb-cyan } // Literal.Number.Float
+  .mh    { color: $jb-cyan } // Literal.Number.Hex
+  .mi    { color: $jb-cyan } // Literal.Number.Integer
+  .mo    { color: $jb-cyan } // Literal.Number.Oct
+  .sb    { color: $jb-magenta } // Literal.String.Backtick
+  .sc    { color: $jb-magenta } // Literal.String.Char
+  .sd    { color: $jb-magenta } // Literal.String.Doc
+  .s2    { color: $jb-magenta } // Literal.String.Double
+  .se    { color: $jb-magenta } // Literal.String.Escape
+  .sh    { color: $jb-magenta } // Literal.String.Heredoc
+  .si    { color: $jb-magenta } // Literal.String.Interpol
+  .sx    { color: $jb-magenta } // Literal.String.Other
+  .sr    { color: $jb-green } // Literal.String.Regex
+  .s1    { color: $jb-magenta } // Literal.String.Single
+  .ss    { color: $jb-magenta } // Literal.String.Symbol
+  .bp    { color: $jb-mono1 } // Name.Builtin.Pseudo
+  .vc    { color: $jb-cyan } // Name.Variable.Class
+  .vg    { color: $jb-cyan } // Name.Variable.Global
+  .vi    { color: $jb-cyan } // Name.Variable.Instance
+  .il    { color: $jb-cyan } // Literal.Number.Integer.Long
+}
